@@ -16,7 +16,6 @@ class MoviesController < ApplicationController
     case sort
     when 'title'
       ordering,@title_header = {:title => :asc}, 'hilite'
-      movies.order
     when 'release_date'
       ordering,@date_header = {:release_date => :asc}, 'hilite'
     end
